@@ -14,6 +14,9 @@
 		1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */; };
 		1267FAF81D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FAF71D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift */; };
 		1267FB031D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */; };
+		5681AF961FFBA121967F82BB /* Pods_Wordpress_photo_awardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */; };
+		76D4811C7AAC26CE9E58FC71 /* Pods_Wordpress_photo_awards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */; };
+		EEA5AF60095FF59D79C91304 /* Pods_Wordpress_photo_awardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CD29B9332C93EE11CB3AD8 /* Pods_Wordpress_photo_awardsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wordpress photo awardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordpress_photo_awardsUITests.swift; sourceTree = "<group>"; };
 		1267FB041D70AE6B00DA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E2E8FC6059432C5021E5367 /* Pods-Wordpress photo awardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsUITests/Pods-Wordpress photo awardsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55CD29B9332C93EE11CB3AD8 /* Pods_Wordpress_photo_awardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B95E10303127169B6A948AE /* Pods-Wordpress photo awards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awards.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awards/Pods-Wordpress photo awards.release.xcconfig"; sourceTree = "<group>"; };
+		9DAF697B3885E57F5D6E979F /* Pods-Wordpress photo awardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsTests/Pods-Wordpress photo awardsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B535DA1298BE77779BF4A200 /* Pods-Wordpress photo awardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsUITests/Pods-Wordpress photo awardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6EA835F9C899AEE4ACD4C8 /* Pods-Wordpress photo awardsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsTests/Pods-Wordpress photo awardsTests.release.xcconfig"; sourceTree = "<group>"; };
+		E951EECA19C2D06B9C7A10C8 /* Pods-Wordpress photo awards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awards/Pods-Wordpress photo awards.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D4811C7AAC26CE9E58FC71 /* Pods_Wordpress_photo_awards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA5AF60095FF59D79C91304 /* Pods_Wordpress_photo_awardsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5681AF961FFBA121967F82BB /* Pods_Wordpress_photo_awardsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				1267FAF61D70AE6B00DA9BD8 /* Wordpress photo awardsTests */,
 				1267FB011D70AE6B00DA9BD8 /* Wordpress photo awardsUITests */,
 				1267FAE01D70AE6A00DA9BD8 /* Products */,
+				A640E5CB96365E7725C845FE /* Pods */,
+				DD8683B779226094EC81755E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = "Wordpress photo awardsUITests";
 			sourceTree = "<group>";
 		};
+		A640E5CB96365E7725C845FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E951EECA19C2D06B9C7A10C8 /* Pods-Wordpress photo awards.debug.xcconfig */,
+				9B95E10303127169B6A948AE /* Pods-Wordpress photo awards.release.xcconfig */,
+				9DAF697B3885E57F5D6E979F /* Pods-Wordpress photo awardsTests.debug.xcconfig */,
+				DA6EA835F9C899AEE4ACD4C8 /* Pods-Wordpress photo awardsTests.release.xcconfig */,
+				B535DA1298BE77779BF4A200 /* Pods-Wordpress photo awardsUITests.debug.xcconfig */,
+				1E2E8FC6059432C5021E5367 /* Pods-Wordpress photo awardsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD8683B779226094EC81755E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */,
+				55CD29B9332C93EE11CB3AD8 /* Pods_Wordpress_photo_awardsTests.framework */,
+				9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1267FB071D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awards" */;
 			buildPhases = (
+				BAFB7993384F6ACDBDCEBA93 /* [CP] Check Pods Manifest.lock */,
 				1267FADB1D70AE6A00DA9BD8 /* Sources */,
 				1267FADC1D70AE6A00DA9BD8 /* Frameworks */,
 				1267FADD1D70AE6A00DA9BD8 /* Resources */,
+				34DA0661F1E82C8A24C45860 /* [CP] Embed Pods Frameworks */,
+				CF55A736A1899E1922B50ED4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1267FB0A1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsTests" */;
 			buildPhases = (
+				19C5FBF1FD2036968456A4C9 /* [CP] Check Pods Manifest.lock */,
 				1267FAEF1D70AE6B00DA9BD8 /* Sources */,
 				1267FAF01D70AE6B00DA9BD8 /* Frameworks */,
 				1267FAF11D70AE6B00DA9BD8 /* Resources */,
+				E59B1F1E3BC67F6B2A05ABBB /* [CP] Embed Pods Frameworks */,
+				DA7437E77CF74008D372A5EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1267FB0D1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsUITests" */;
 			buildPhases = (
+				CAEEF070E770141A21CA6DA6 /* [CP] Check Pods Manifest.lock */,
 				1267FAFA1D70AE6B00DA9BD8 /* Sources */,
 				1267FAFB1D70AE6B00DA9BD8 /* Frameworks */,
 				1267FAFC1D70AE6B00DA9BD8 /* Resources */,
+				921348760A43AB1385732B0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +298,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C5FBF1FD2036968456A4C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34DA0661F1E82C8A24C45860 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordpress photo awards/Pods-Wordpress photo awards-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		921348760A43AB1385732B0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordpress photo awardsUITests/Pods-Wordpress photo awardsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAFB7993384F6ACDBDCEBA93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEEF070E770141A21CA6DA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF55A736A1899E1922B50ED4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordpress photo awards/Pods-Wordpress photo awards-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA7437E77CF74008D372A5EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordpress photo awardsTests/Pods-Wordpress photo awardsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E59B1F1E3BC67F6B2A05ABBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wordpress photo awardsTests/Pods-Wordpress photo awardsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1267FADB1D70AE6A00DA9BD8 /* Sources */ = {
@@ -399,6 +570,7 @@
 		};
 		1267FB081D70AE6B00DA9BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E951EECA19C2D06B9C7A10C8 /* Pods-Wordpress photo awards.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
@@ -410,6 +582,7 @@
 		};
 		1267FB091D70AE6B00DA9BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B95E10303127169B6A948AE /* Pods-Wordpress photo awards.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
@@ -421,6 +594,7 @@
 		};
 		1267FB0B1D70AE6B00DA9BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAF697B3885E57F5D6E979F /* Pods-Wordpress photo awardsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Wordpress photo awardsTests/Info.plist";
@@ -433,6 +607,7 @@
 		};
 		1267FB0C1D70AE6B00DA9BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6EA835F9C899AEE4ACD4C8 /* Pods-Wordpress photo awardsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Wordpress photo awardsTests/Info.plist";
@@ -445,6 +620,7 @@
 		};
 		1267FB0E1D70AE6B00DA9BD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B535DA1298BE77779BF4A200 /* Pods-Wordpress photo awardsUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Wordpress photo awardsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +632,7 @@
 		};
 		1267FB0F1D70AE6B00DA9BD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E2E8FC6059432C5021E5367 /* Pods-Wordpress photo awardsUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Wordpress photo awardsUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +661,7 @@
 				1267FB091D70AE6B00DA9BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1267FB0A1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +670,7 @@
 				1267FB0C1D70AE6B00DA9BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1267FB0D1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +679,7 @@
 				1267FB0F1D70AE6B00DA9BD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
