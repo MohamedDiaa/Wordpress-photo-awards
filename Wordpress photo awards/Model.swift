@@ -31,7 +31,6 @@ class Model: NSObject {
         }
     }
 
-
     func parseJson(let json:AnyObject) -> [Item]?
     {
     if let files = json as? [[String:AnyObject]]
