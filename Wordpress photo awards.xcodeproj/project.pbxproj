@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1267FAE31D70AE6A00DA9BD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FAE21D70AE6A00DA9BD8 /* AppDelegate.swift */; };
+		1267FAE51D70AE6A00DA9BD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FAE41D70AE6A00DA9BD8 /* ViewController.swift */; };
+		1267FAE81D70AE6A00DA9BD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1267FAE61D70AE6A00DA9BD8 /* Main.storyboard */; };
+		1267FAEA1D70AE6A00DA9BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1267FAE91D70AE6A00DA9BD8 /* Assets.xcassets */; };
+		1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */; };
+		1267FAF81D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FAF71D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift */; };
+		1267FB031D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1267FAF41D70AE6B00DA9BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1267FAD71D70AE6A00DA9BD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1267FADE1D70AE6A00DA9BD8;
+			remoteInfo = "Wordpress photo awards";
+		};
+		1267FAFF1D70AE6B00DA9BD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1267FAD71D70AE6A00DA9BD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1267FADE1D70AE6A00DA9BD8;
+			remoteInfo = "Wordpress photo awards";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wordpress photo awards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1267FAE21D70AE6A00DA9BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1267FAE41D70AE6A00DA9BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1267FAE71D70AE6A00DA9BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1267FAE91D70AE6A00DA9BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1267FAEC1D70AE6A00DA9BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1267FAEE1D70AE6A00DA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1267FAF31D70AE6B00DA9BD8 /* Wordpress photo awardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wordpress photo awardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1267FAF71D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordpress_photo_awardsTests.swift; sourceTree = "<group>"; };
+		1267FAF91D70AE6B00DA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wordpress photo awardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordpress_photo_awardsUITests.swift; sourceTree = "<group>"; };
+		1267FB041D70AE6B00DA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1267FADC1D70AE6A00DA9BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAF01D70AE6B00DA9BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAFB1D70AE6B00DA9BD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1267FAD61D70AE6A00DA9BD8 = {
+			isa = PBXGroup;
+			children = (
+				1267FAE11D70AE6A00DA9BD8 /* Wordpress photo awards */,
+				1267FAF61D70AE6B00DA9BD8 /* Wordpress photo awardsTests */,
+				1267FB011D70AE6B00DA9BD8 /* Wordpress photo awardsUITests */,
+				1267FAE01D70AE6A00DA9BD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1267FAE01D70AE6A00DA9BD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */,
+				1267FAF31D70AE6B00DA9BD8 /* Wordpress photo awardsTests.xctest */,
+				1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1267FAE11D70AE6A00DA9BD8 /* Wordpress photo awards */ = {
+			isa = PBXGroup;
+			children = (
+				1267FAE21D70AE6A00DA9BD8 /* AppDelegate.swift */,
+				1267FAE41D70AE6A00DA9BD8 /* ViewController.swift */,
+				1267FAE61D70AE6A00DA9BD8 /* Main.storyboard */,
+				1267FAE91D70AE6A00DA9BD8 /* Assets.xcassets */,
+				1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */,
+				1267FAEE1D70AE6A00DA9BD8 /* Info.plist */,
+			);
+			path = "Wordpress photo awards";
+			sourceTree = "<group>";
+		};
+		1267FAF61D70AE6B00DA9BD8 /* Wordpress photo awardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1267FAF71D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift */,
+				1267FAF91D70AE6B00DA9BD8 /* Info.plist */,
+			);
+			path = "Wordpress photo awardsTests";
+			sourceTree = "<group>";
+		};
+		1267FB011D70AE6B00DA9BD8 /* Wordpress photo awardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */,
+				1267FB041D70AE6B00DA9BD8 /* Info.plist */,
+			);
+			path = "Wordpress photo awardsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1267FADE1D70AE6A00DA9BD8 /* Wordpress photo awards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1267FB071D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awards" */;
+			buildPhases = (
+				1267FADB1D70AE6A00DA9BD8 /* Sources */,
+				1267FADC1D70AE6A00DA9BD8 /* Frameworks */,
+				1267FADD1D70AE6A00DA9BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wordpress photo awards";
+			productName = "Wordpress photo awards";
+			productReference = 1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1267FAF21D70AE6B00DA9BD8 /* Wordpress photo awardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1267FB0A1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsTests" */;
+			buildPhases = (
+				1267FAEF1D70AE6B00DA9BD8 /* Sources */,
+				1267FAF01D70AE6B00DA9BD8 /* Frameworks */,
+				1267FAF11D70AE6B00DA9BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1267FAF51D70AE6B00DA9BD8 /* PBXTargetDependency */,
+			);
+			name = "Wordpress photo awardsTests";
+			productName = "Wordpress photo awardsTests";
+			productReference = 1267FAF31D70AE6B00DA9BD8 /* Wordpress photo awardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1267FAFD1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1267FB0D1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsUITests" */;
+			buildPhases = (
+				1267FAFA1D70AE6B00DA9BD8 /* Sources */,
+				1267FAFB1D70AE6B00DA9BD8 /* Frameworks */,
+				1267FAFC1D70AE6B00DA9BD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1267FB001D70AE6B00DA9BD8 /* PBXTargetDependency */,
+			);
+			name = "Wordpress photo awardsUITests";
+			productName = "Wordpress photo awardsUITests";
+			productReference = 1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1267FAD71D70AE6A00DA9BD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Mohammed Diaa";
+				TargetAttributes = {
+					1267FADE1D70AE6A00DA9BD8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					1267FAF21D70AE6B00DA9BD8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1267FADE1D70AE6A00DA9BD8;
+					};
+					1267FAFD1D70AE6B00DA9BD8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1267FADE1D70AE6A00DA9BD8;
+					};
+				};
+			};
+			buildConfigurationList = 1267FADA1D70AE6A00DA9BD8 /* Build configuration list for PBXProject "Wordpress photo awards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1267FAD61D70AE6A00DA9BD8;
+			productRefGroup = 1267FAE01D70AE6A00DA9BD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1267FADE1D70AE6A00DA9BD8 /* Wordpress photo awards */,
+				1267FAF21D70AE6B00DA9BD8 /* Wordpress photo awardsTests */,
+				1267FAFD1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1267FADD1D70AE6A00DA9BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */,
+				1267FAEA1D70AE6A00DA9BD8 /* Assets.xcassets in Resources */,
+				1267FAE81D70AE6A00DA9BD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAF11D70AE6B00DA9BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAFC1D70AE6B00DA9BD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1267FADB1D70AE6A00DA9BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1267FAE51D70AE6A00DA9BD8 /* ViewController.swift in Sources */,
+				1267FAE31D70AE6A00DA9BD8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAEF1D70AE6B00DA9BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1267FAF81D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1267FAFA1D70AE6B00DA9BD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1267FB031D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1267FAF51D70AE6B00DA9BD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1267FADE1D70AE6A00DA9BD8 /* Wordpress photo awards */;
+			targetProxy = 1267FAF41D70AE6B00DA9BD8 /* PBXContainerItemProxy */;
+		};
+		1267FB001D70AE6B00DA9BD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1267FADE1D70AE6A00DA9BD8 /* Wordpress photo awards */;
+			targetProxy = 1267FAFF1D70AE6B00DA9BD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1267FAE61D70AE6A00DA9BD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1267FAE71D70AE6A00DA9BD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1267FAEC1D70AE6A00DA9BD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1267FB051D70AE6B00DA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1267FB061D70AE6B00DA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1267FB081D70AE6B00DA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1267FB091D70AE6B00DA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awards";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1267FB0B1D70AE6B00DA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wordpress photo awardsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wordpress photo awards.app/Wordpress photo awards";
+			};
+			name = Debug;
+		};
+		1267FB0C1D70AE6B00DA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wordpress photo awardsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awardsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wordpress photo awards.app/Wordpress photo awards";
+			};
+			name = Release;
+		};
+		1267FB0E1D70AE6B00DA9BD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wordpress photo awardsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wordpress photo awards";
+			};
+			name = Debug;
+		};
+		1267FB0F1D70AE6B00DA9BD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wordpress photo awardsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awardsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wordpress photo awards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1267FADA1D70AE6A00DA9BD8 /* Build configuration list for PBXProject "Wordpress photo awards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1267FB051D70AE6B00DA9BD8 /* Debug */,
+				1267FB061D70AE6B00DA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1267FB071D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1267FB081D70AE6B00DA9BD8 /* Debug */,
+				1267FB091D70AE6B00DA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1267FB0A1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1267FB0B1D70AE6B00DA9BD8 /* Debug */,
+				1267FB0C1D70AE6B00DA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1267FB0D1D70AE6B00DA9BD8 /* Build configuration list for PBXNativeTarget "Wordpress photo awardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1267FB0E1D70AE6B00DA9BD8 /* Debug */,
+				1267FB0F1D70AE6B00DA9BD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1267FAD71D70AE6A00DA9BD8 /* Project object */;
+}
