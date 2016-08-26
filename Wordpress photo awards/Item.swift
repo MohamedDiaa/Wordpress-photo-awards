@@ -25,14 +25,19 @@ struct Tag{
 
 struct Error{
 
-    let error: NSError?
+    let systemError: NSError?
+    let appError:String?
     
     var description:String?{
         
         get{
-            if let error = self.error
+            if let error = self.systemError
             {
                 return error.description
+            }
+            else if let appError = self.appError
+            {
+                return appError
             }
             return "Unknow Error"
         }
