@@ -14,6 +14,8 @@
 		1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */; };
 		1267FAF81D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FAF71D70AE6B00DA9BD8 /* Wordpress_photo_awardsTests.swift */; };
 		1267FB031D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */; };
+		1267FB111D70B04B00DA9BD8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FB101D70B04A00DA9BD8 /* Model.swift */; };
+		1267FB131D70B0DC00DA9BD8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1267FB121D70B0DC00DA9BD8 /* Item.swift */; };
 		5681AF961FFBA121967F82BB /* Pods_Wordpress_photo_awardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */; };
 		76D4811C7AAC26CE9E58FC71 /* Pods_Wordpress_photo_awards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */; };
 		EEA5AF60095FF59D79C91304 /* Pods_Wordpress_photo_awardsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55CD29B9332C93EE11CB3AD8 /* Pods_Wordpress_photo_awardsTests.framework */; };
@@ -50,6 +52,8 @@
 		1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wordpress photo awardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1267FB021D70AE6B00DA9BD8 /* Wordpress_photo_awardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordpress_photo_awardsUITests.swift; sourceTree = "<group>"; };
 		1267FB041D70AE6B00DA9BD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1267FB101D70B04A00DA9BD8 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1267FB121D70B0DC00DA9BD8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1E2E8FC6059432C5021E5367 /* Pods-Wordpress photo awardsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsUITests/Pods-Wordpress photo awardsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		55CD29B9332C93EE11CB3AD8 /* Pods_Wordpress_photo_awardsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awardsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awardsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +124,8 @@
 				1267FAE91D70AE6A00DA9BD8 /* Assets.xcassets */,
 				1267FAEB1D70AE6A00DA9BD8 /* LaunchScreen.storyboard */,
 				1267FAEE1D70AE6A00DA9BD8 /* Info.plist */,
+				1267FB101D70B04A00DA9BD8 /* Model.swift */,
+				1267FB121D70B0DC00DA9BD8 /* Item.swift */,
 			);
 			path = "Wordpress photo awards";
 			sourceTree = "<group>";
@@ -427,6 +433,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1267FB131D70B0DC00DA9BD8 /* Item.swift in Sources */,
+				1267FB111D70B04B00DA9BD8 /* Model.swift in Sources */,
 				1267FAE51D70AE6A00DA9BD8 /* ViewController.swift in Sources */,
 				1267FAE31D70AE6A00DA9BD8 /* AppDelegate.swift in Sources */,
 			);
