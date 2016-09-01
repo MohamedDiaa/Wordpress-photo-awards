@@ -7,14 +7,15 @@ target 'Wordpress photo awards' do
 
   # Pods for Wordpress photo awards
   pod 'Alamofire'
-
+  pod 'AlamofireImage', '~> 2.0'
+  
   target 'Wordpress photo awardsTests' do
-    inherit! :search_paths
+      #inherit! :search_paths
     # Pods for testing
   end
 
   target 'Wordpress photo awardsUITests' do
-    inherit! :search_paths
+    #inherit! :search_paths
     # Pods for testing
   end
 
