@@ -63,7 +63,13 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         if let cell  = tableView.dequeueReusableCellWithIdentifier("PhotoTableViewCell") as? PhotoTableViewCell ,let items = self.items where items.count > indexPath.section
         {
-          cell.set(items[indexPath.section])
+            cell.set(items[indexPath.section],refreshCell: {
+            
+                if tableView.numberOfSections > indexPath.section
+                {
+                        tableView.reloadSections(NSIndexSet(index: indexPath.section), withRowAnimation: UITableViewRowAnimation.None)
+                }
+            })
         
             return cell
         }

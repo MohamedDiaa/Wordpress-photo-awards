@@ -15,18 +15,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="452" height="361"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Example" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Hp-3L0">
-                        <rect key="frame" x="80" y="80" width="362" height="281"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Example" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Hp-3L0">
+                        <rect key="frame" x="80" y="38" width="362" height="323"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Here is a blog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2I-bd-cMD">
-                        <rect key="frame" x="80" y="8" width="105" height="67"/>
+                        <rect key="frame" x="80" y="13" width="105" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ofZ-xk-EiS"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="topMargin" secondItem="j2I-bd-cMD" secondAttribute="top" id="9rP-Zz-E5H"/>
+                    <constraint firstAttribute="topMargin" secondItem="j2I-bd-cMD" secondAttribute="top" constant="-5" id="9rP-Zz-E5H"/>
                     <constraint firstAttribute="bottom" secondItem="Xdr-Hp-3L0" secondAttribute="bottom" id="Hct-QF-pkx"/>
                     <constraint firstItem="Xdr-Hp-3L0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="80" id="Hw3-aT-bsD"/>
                     <constraint firstItem="Xdr-Hp-3L0" firstAttribute="top" secondItem="j2I-bd-cMD" secondAttribute="bottom" constant="5" id="IYU-qk-iaG"/>
