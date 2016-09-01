@@ -10,6 +10,9 @@ import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
 
+    @IBOutlet var blogLabel: UILabel!
+    @IBOutlet var postImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

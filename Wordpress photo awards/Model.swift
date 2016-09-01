@@ -11,6 +11,15 @@ import Alamofire
 
 class Model: NSObject {
 
+    class var sharedInstance :Model
+    {
+        struct Singleton {
+            static let instance = Model()
+        }
+        Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders = [ "ContentType": "application/json"]
+
+        return Singleton.instance
+    }
     
     func loadData(completion:(items:[Item]?)->Void , failure: (error:Error)-> Void)
     {
