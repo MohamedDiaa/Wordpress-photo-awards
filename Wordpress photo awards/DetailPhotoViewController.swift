@@ -59,6 +59,23 @@ class DetailPhotoViewController: UIViewController {
  
     @IBAction func imageSelected()
     {
+        if let delgate = UIApplication.sharedApplication().delegate as? AppDelegate , window = delgate.window
+        {
+            let imgView = UIImageView()
+            imgView.translatesAutoresizingMaskIntoConstraints = false
+            imgView.backgroundColor = UIColor.groupTableViewBackgroundColor()
+            imgView.contentMode = UIViewContentMode.ScaleAspectFit
+            imgView.loadItem(item, completed: { 
+                
+            })
+            let c = window.createAlignConstraints(imgView)
+            window.addSubview(imgView)
+            window.addConstraints(c)
+            imgView.userInteractionEnabled = true
+            
+            let gesture = UITapGestureRecognizer(target: imgView, action: #selector(UIImageView.removeFromSuperview))
+            imgView.addGestureRecognizer(gesture)
+        }
         print("image Selected")
     }
 }

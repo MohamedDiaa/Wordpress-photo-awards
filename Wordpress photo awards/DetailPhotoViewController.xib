@@ -77,7 +77,7 @@
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>
-        <tapGestureRecognizer id="h3J-dP-KM2">
+        <tapGestureRecognizer numberOfTapsRequired="2" id="h3J-dP-KM2">
             <connections>
                 <action selector="imageSelected" destination="-1" id="lup-EF-Q7H"/>
             </connections>
