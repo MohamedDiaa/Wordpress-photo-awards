@@ -6,3 +6,7 @@
 -Added double taping on Photo will open it on full screen in details photo information.
 
 -Pull to refresh in MainScreen.
+
+-Filtering will try to match sub text in Item title or tags
+
+-Filtering happens when pressing enter/new line in keyboard.

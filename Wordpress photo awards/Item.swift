@@ -14,6 +14,26 @@ struct Item {
     let description:String
     let url:NSURL?
     let tags : [Tag]?
+    
+    
+    func matchText(text:String)->Bool
+    {
+        //Match Name , tags then no matching
+        if name.localizedCaseInsensitiveContainsString(text){
+            return true
+        }
+        else if let tags = self.tags
+        {
+            for tag in tags
+            {
+                if tag.name.localizedCaseInsensitiveContainsString(text)
+                {
+                    return true
+                }
+            }
+        }
+        return false
+    }
 }
 
 

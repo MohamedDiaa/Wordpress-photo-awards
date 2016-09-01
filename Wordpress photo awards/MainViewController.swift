@@ -11,7 +11,9 @@ import UIKit
 class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,UITextFieldDelegate {
 
     @IBOutlet var photosTableView:UITableView!
-    var items:[Item]?
+    var items:[Item]?{didSet{self.filtered = items}}
+    var filtered:[Item]?
+
     let refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
@@ -65,7 +67,7 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
       
-        if let items = self.items
+        if let items = self.filtered
         {
             return items.count
         }
@@ -75,7 +77,7 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if let cell  = tableView.dequeueReusableCellWithIdentifier("PhotoTableViewCell") as? PhotoTableViewCell ,let items = self.items where items.count > indexPath.section
+        if let cell  = tableView.dequeueReusableCellWithIdentifier("PhotoTableViewCell") as? PhotoTableViewCell ,let items = self.filtered where items.count > indexPath.section
         {
             cell.set(items[indexPath.section],refreshCell: {
             
@@ -105,7 +107,7 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        if let items = self.items where items.count > indexPath.section
+        if let items = self.filtered where items.count > indexPath.section
         {
             let detailVC = DetailPhotoViewController(nibName: "DetailPhotoViewController", bundle: nil, item: items[indexPath.section])
             self.navigationController?.pushViewController(detailVC, animated: true)
@@ -116,6 +118,19 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     //UITextFieldDelegate
     func textFieldDidEndEditing(textField: UITextField) {
         
+        if let items = self.items,let text = textField.text where !text.isEmpty
+        {
+            let filtered = items.filter({ (item) -> Bool in
+                return item.matchText(text)
+            })
+            self.filtered = filtered
+            self.photosTableView.reloadData()
+        }
+        else{
+            self.loadData({ 
+                
+            })
+        }
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
