@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource ,UITextFieldDelegate {
 
     @IBOutlet var photosTableView:UITableView!
     var items:[Item]?
@@ -111,5 +111,15 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             self.navigationController?.pushViewController(detailVC, animated: true)
         }
     
+    }
+    
+    //UITextFieldDelegate
+    func textFieldDidEndEditing(textField: UITextField) {
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

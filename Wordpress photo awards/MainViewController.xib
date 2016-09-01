@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Wordpress_photo_awards" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="fotografiska" customModuleProvider="target">
             <connections>
                 <outlet property="photosTableView" destination="pyI-PB-Ov0" id="xgb-lG-Wdr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -17,38 +17,46 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_header" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-7E-5iH">
-                    <rect key="frame" x="100" y="70" width="500" height="80"/>
+                    <rect key="frame" x="100" y="70" width="500" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="80" id="sKj-oG-lVq"/>
+                        <constraint firstAttribute="height" constant="60" id="sKj-oG-lVq"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo on 9-1-16 at 8.20 PM" translatesAutoresizingMaskIntoConstraints="NO" id="yNn-AA-tcR">
-                    <rect key="frame" x="5" y="74" width="77" height="72"/>
+                    <rect key="frame" x="5" y="64" width="77" height="72"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="71L-Du-dFu"/>
                         <constraint firstAttribute="height" constant="72" id="ITO-D2-31X"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-PB-Ov0">
-                    <rect key="frame" x="0.0" y="150" width="600" height="450"/>
+                    <rect key="frame" x="0.0" y="170" width="600" height="430"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="BY6-jv-3Pu"/>
                         <outlet property="delegate" destination="-1" id="pcS-pr-Ci9"/>
                     </connections>
                 </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GFr-Ty-ot6">
+                    <rect key="frame" x="20" y="135" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="pyI-PB-Ov0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4sk-ud-rub"/>
                 <constraint firstItem="ALR-7E-5iH" firstAttribute="centerY" secondItem="yNn-AA-tcR" secondAttribute="centerY" id="6H3-wI-XQf"/>
                 <constraint firstAttribute="bottom" secondItem="pyI-PB-Ov0" secondAttribute="bottom" id="CaC-NZ-owq"/>
-                <constraint firstItem="pyI-PB-Ov0" firstAttribute="top" secondItem="ALR-7E-5iH" secondAttribute="bottom" id="JZ5-vF-vRq"/>
+                <constraint firstItem="pyI-PB-Ov0" firstAttribute="top" secondItem="GFr-Ty-ot6" secondAttribute="bottom" constant="5" id="OZx-f0-RkM"/>
                 <constraint firstAttribute="trailing" secondItem="ALR-7E-5iH" secondAttribute="trailing" id="SrW-cC-XiQ"/>
                 <constraint firstItem="ALR-7E-5iH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="TDk-fJ-cbD"/>
                 <constraint firstItem="ALR-7E-5iH" firstAttribute="leading" secondItem="yNn-AA-tcR" secondAttribute="trailing" constant="18" id="dJz-Iy-bOm"/>
                 <constraint firstAttribute="trailing" secondItem="pyI-PB-Ov0" secondAttribute="trailing" id="jKI-nK-cvq"/>
+                <constraint firstItem="GFr-Ty-ot6" firstAttribute="top" secondItem="ALR-7E-5iH" secondAttribute="bottom" constant="5" id="qOZ-0g-9JB"/>
+                <constraint firstItem="GFr-Ty-ot6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="tmw-01-yxf"/>
                 <constraint firstItem="yNn-AA-tcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="uHR-T4-JtJ"/>
+                <constraint firstAttribute="trailing" secondItem="GFr-Ty-ot6" secondAttribute="trailing" constant="20" id="vrC-Bm-GOJ"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>
