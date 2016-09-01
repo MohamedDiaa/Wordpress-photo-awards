@@ -11,7 +11,9 @@ import UIKit
 class PhotoTableViewCell: UITableViewCell {
 
     @IBOutlet var blogLabel: UILabel!
+    
     @IBOutlet var postImageView: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,4 +26,9 @@ class PhotoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func set(item:Item){
+    
+        self.blogLabel.text = item.name
+        
+    }
 }

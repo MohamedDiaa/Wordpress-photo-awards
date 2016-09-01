@@ -24,15 +24,16 @@ class Model: NSObject {
     func loadData(completion:(items:[Item]?)->Void , failure: (error:Error)-> Void)
     {
         let link = "https://static.mobileinteraction.se/developertest/wordpressphotoawards.json"
-        
         Alamofire.request(.GET, link).responseJSON { (response) in
             
             switch(response.result)
             {
             case .Success(let json):
-                    return completion(items: self.parseJson(json))
+                print(json)
+                return completion(items: self.parseJson(json))
                 
             case .Failure(let error):
+                print(error)
                 return failure(error: Error(systemError: error, appError: nil))
 
             }
@@ -42,7 +43,7 @@ class Model: NSObject {
 
     func parseJson(let json:AnyObject) -> [Item]?
     {
-    if let files = json as? [[String:AnyObject]]
+    if let files = json["files"] as? [[String:AnyObject]]
     {
         var items = [Item]()
         for file in files

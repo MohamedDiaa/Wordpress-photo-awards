@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet var photosTableView:UITableView!
+    var items:[Item]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,22 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         // Do any additional setup after loading the view.
         self.photosTableView.estimatedRowHeight = 85.0
         self.photosTableView.rowHeight = UITableViewAutomaticDimension
+        
+        self.loadData()
     }
 
+    func loadData()
+    {
+        Model.sharedInstance.loadData({ (items) in
+            
+                self.items = items
+                self.photosTableView.reloadData()
+            
+            }) { (error) in
+                
+        }
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,14 +50,25 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 10
+      
+        if let items = self.items
+        {
+            return items.count
+        }
+        
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell  = tableView.dequeueReusableCellWithIdentifier("PhotoTableViewCell") as? PhotoTableViewCell
+        if let cell  = tableView.dequeueReusableCellWithIdentifier("PhotoTableViewCell") as? PhotoTableViewCell ,let items = self.items where items.count > indexPath.section
+        {
+          cell.set(items[indexPath.section])
         
-        return cell ?? UITableViewCell()
+            return cell
+        }
+        
+         return UITableViewCell()
     }
    
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
