@@ -22,6 +22,7 @@
 		76D4811C7AAC26CE9E58FC71 /* Pods_Wordpress_photo_awards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */; };
 		D90F49271D78D677004ADFEC /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F49251D78D677004ADFEC /* DetailPhotoViewController.swift */; };
 		D90F49281D78D677004ADFEC /* DetailPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F49261D78D677004ADFEC /* DetailPhotoViewController.xib */; };
+		D90F492A1D78E148004ADFEC /* assumptions in Resources */ = {isa = PBXBuildFile; fileRef = D90F49291D78E148004ADFEC /* assumptions */; };
 		D9E735D31D78A9720018C1A9 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E735D11D78A9720018C1A9 /* PhotoTableViewCell.swift */; };
 		D9E735D41D78A9720018C1A9 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E735D21D78A9720018C1A9 /* PhotoTableViewCell.xib */; };
 		D9E735D61D78A9B20018C1A9 /* PhotoTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E735D51D78A9B20018C1A9 /* PhotoTableViewHeader.xib */; };
@@ -46,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wordpress photo awards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1267FADF1D70AE6A00DA9BD8 /* fotografiska.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fotografiska.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1267FAE21D70AE6A00DA9BD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1267FAE41D70AE6A00DA9BD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1267FAE71D70AE6A00DA9BD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90F49251D78D677004ADFEC /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
 		D90F49261D78D677004ADFEC /* DetailPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPhotoViewController.xib; sourceTree = "<group>"; };
+		D90F49291D78E148004ADFEC /* assumptions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = assumptions; sourceTree = "<group>"; };
 		D9E735D11D78A9720018C1A9 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		D9E735D21D78A9720018C1A9 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		D9E735D51D78A9B20018C1A9 /* PhotoTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewHeader.xib; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 		1267FAE01D70AE6A00DA9BD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */,
+				1267FADF1D70AE6A00DA9BD8 /* fotografiska.app */,
 				1267FAF31D70AE6B00DA9BD8 /* Wordpress photo awardsTests.xctest */,
 				1267FAFE1D70AE6B00DA9BD8 /* Wordpress photo awardsUITests.xctest */,
 			);
@@ -140,6 +142,7 @@
 				1267FAEE1D70AE6A00DA9BD8 /* Info.plist */,
 				1267FB151D70B6E700DA9BD8 /* Controllers */,
 				1267FB141D70B6D900DA9BD8 /* Model */,
+				D90F49291D78E148004ADFEC /* assumptions */,
 			);
 			path = "Wordpress photo awards";
 			sourceTree = "<group>";
@@ -229,7 +232,7 @@
 			);
 			name = "Wordpress photo awards";
 			productName = "Wordpress photo awards";
-			productReference = 1267FADF1D70AE6A00DA9BD8 /* Wordpress photo awards.app */;
+			productReference = 1267FADF1D70AE6A00DA9BD8 /* fotografiska.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1267FAF21D70AE6B00DA9BD8 /* Wordpress photo awardsTests */ = {
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */,
+				D90F492A1D78E148004ADFEC /* assumptions in Resources */,
 				D9E735D61D78A9B20018C1A9 /* PhotoTableViewHeader.xib in Resources */,
 				D90F49281D78D677004ADFEC /* DetailPhotoViewController.xib in Resources */,
 				1267FAEA1D70AE6A00DA9BD8 /* Assets.xcassets in Resources */,
@@ -644,7 +648,8 @@
 				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awards";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fotografiska;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -656,7 +661,8 @@
 				INFOPLIST_FILE = "Wordpress photo awards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MD.Wordpress-photo-awards";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = fotografiska;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
