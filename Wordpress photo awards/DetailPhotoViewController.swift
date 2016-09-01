@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import TagListView
 
 class DetailPhotoViewController: UIViewController {
 
     @IBOutlet var titleLabel:UILabel!
     @IBOutlet var imgView:UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
+    @IBOutlet var tagList:TagListView!
     
     var item:Item!
     
@@ -36,6 +38,13 @@ class DetailPhotoViewController: UIViewController {
             //Nothing here yet
         }
         self.descriptionTextView.text = item.description
+    
+        if let tags = item.tags
+        {
+            tags.forEach({ (tag) in
+                self.tagList.addTag(tag.name)
+            })
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
