@@ -15,6 +15,7 @@ class Model: NSObject {
     {
         struct Singleton {
             static let instance = Model()
+         
         }
         Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders = [ "ContentType": "application/json"]
 
@@ -29,11 +30,13 @@ class Model: NSObject {
             switch(response.result)
             {
             case .Success(let json):
-                print(json)
                 return completion(items: self.parseJson(json))
                 
             case .Failure(let error):
-                print(error)
+                if let request = response.request ,cachedResponse = NSURLCache.sharedURLCache().cachedResponseForRequest(request)
+                {
+                    return completion(items: self.parseJson(cachedResponse))
+                }
                 return failure(error: Error(systemError: error, appError: nil))
 
             }
