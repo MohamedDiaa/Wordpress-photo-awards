@@ -12,7 +12,8 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     @IBOutlet var photosTableView:UITableView!
     var items:[Item]?
-    
+    let refreshControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,20 +23,33 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.photosTableView.estimatedRowHeight = 85.0
         self.photosTableView.rowHeight = UITableViewAutomaticDimension
         
-        self.loadData()
+        self.loadData { 
+            //Do nothing
+        }
+        
+        refreshControl.addTarget(self, action: #selector(MainViewController.beginRefreshing), forControlEvents: UIControlEvents.ValueChanged)
+        self.photosTableView.addSubview(refreshControl)
     }
 
-    func loadData()
+    func loadData(completion:()->())
     {
         Model.sharedInstance.loadData({ (items) in
             
                 self.items = items
                 self.photosTableView.reloadData()
+                completion()
             
             }) { (error) in
-                
+                completion()
         }
     
+    }
+    
+    func beginRefreshing()
+    {
+            self.loadData { 
+                self.refreshControl.endRefreshing()
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
