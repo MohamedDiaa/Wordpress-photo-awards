@@ -17,27 +17,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tumblr_header" translatesAutoresizingMaskIntoConstraints="NO" id="ALR-7E-5iH">
-                    <rect key="frame" x="100" y="50" width="500" height="80"/>
+                    <rect key="frame" x="100" y="70" width="500" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="sKj-oG-lVq"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBi-T1-4sS" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                    <color key="backgroundColor" red="0.33725491169999999" green="0.50196081400000003" blue="0.34509804840000002" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Twx-Vl-hm3"/>
-                    </constraints>
-                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo on 9-1-16 at 8.20 PM" translatesAutoresizingMaskIntoConstraints="NO" id="yNn-AA-tcR">
-                    <rect key="frame" x="5" y="54" width="77" height="72"/>
+                    <rect key="frame" x="5" y="74" width="77" height="72"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="77" id="71L-Du-dFu"/>
                         <constraint firstAttribute="height" constant="72" id="ITO-D2-31X"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pyI-PB-Ov0">
-                    <rect key="frame" x="0.0" y="130" width="600" height="470"/>
+                    <rect key="frame" x="0.0" y="150" width="600" height="450"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="BY6-jv-3Pu"/>
@@ -49,17 +42,15 @@
             <constraints>
                 <constraint firstItem="pyI-PB-Ov0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4sk-ud-rub"/>
                 <constraint firstItem="ALR-7E-5iH" firstAttribute="centerY" secondItem="yNn-AA-tcR" secondAttribute="centerY" id="6H3-wI-XQf"/>
-                <constraint firstItem="IBi-T1-4sS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BTZ-ox-4dU"/>
                 <constraint firstAttribute="bottom" secondItem="pyI-PB-Ov0" secondAttribute="bottom" id="CaC-NZ-owq"/>
                 <constraint firstItem="pyI-PB-Ov0" firstAttribute="top" secondItem="ALR-7E-5iH" secondAttribute="bottom" id="JZ5-vF-vRq"/>
                 <constraint firstAttribute="trailing" secondItem="ALR-7E-5iH" secondAttribute="trailing" id="SrW-cC-XiQ"/>
+                <constraint firstItem="ALR-7E-5iH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="TDk-fJ-cbD"/>
                 <constraint firstItem="ALR-7E-5iH" firstAttribute="leading" secondItem="yNn-AA-tcR" secondAttribute="trailing" constant="18" id="dJz-Iy-bOm"/>
-                <constraint firstItem="IBi-T1-4sS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gZq-Va-zAo"/>
                 <constraint firstAttribute="trailing" secondItem="pyI-PB-Ov0" secondAttribute="trailing" id="jKI-nK-cvq"/>
-                <constraint firstAttribute="trailing" secondItem="IBi-T1-4sS" secondAttribute="trailing" id="m2V-eY-YN1"/>
                 <constraint firstItem="yNn-AA-tcR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="uHR-T4-JtJ"/>
-                <constraint firstItem="ALR-7E-5iH" firstAttribute="top" secondItem="IBi-T1-4sS" secondAttribute="bottom" id="zDU-g9-LfW"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>
     </objects>
     <resources>

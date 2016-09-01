@@ -14,17 +14,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
         let mvc = MainViewController(nibName: "MainViewController", bundle: nil)
         
-        mvc.view.translatesAutoresizingMaskIntoConstraints = false
-        self.addChildViewController(mvc)
-        let c1 = NSLayoutConstraint(item: self.view, attribute: .Top, relatedBy: .Equal, toItem: mvc.view, attribute: .Top, multiplier: 1.0, constant: 0.0)
-        let c2 = NSLayoutConstraint(item: self.view, attribute: .Bottom, relatedBy: .Equal, toItem: mvc.view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-        let c3 = NSLayoutConstraint(item: self.view, attribute: .Leading, relatedBy: .Equal, toItem: mvc.view, attribute: .Leading, multiplier: 1.0, constant: 0.0)
-        let c4 = NSLayoutConstraint(item: self.view, attribute: .Trailing, relatedBy: .Equal, toItem: mvc.view, attribute: .Trailing, multiplier: 1.0, constant: 0.0)
+        let navController = UINavigationController(rootViewController: mvc)
+
+        navController.view.translatesAutoresizingMaskIntoConstraints = false
+        self.addChildViewController(navController)
         
-        self.view.addSubview(mvc.view)
-        self.view.addConstraints([c1,c2,c3,c4])
+        self.view.addSubview(navController.view)
+        self.view.addConstraints(self.view.createAlignConstraints(navController.view))
         self.view.setNeedsLayout()
         self.view.layoutIfNeeded()
     }
@@ -37,3 +36,17 @@ class ViewController: UIViewController {
 
 }
 
+extension UIView
+{
+    func createAlignConstraints(withView:UIView) -> [NSLayoutConstraint]
+    {
+        
+        let c1 = NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: withView, attribute: .Top, multiplier: 1.0, constant: 0.0)
+        let c2 = NSLayoutConstraint(item: self, attribute: .Bottom, relatedBy: .Equal, toItem: withView, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
+        let c3 = NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: withView, attribute: .Leading, multiplier: 1.0, constant: 0.0)
+        let c4 = NSLayoutConstraint(item: self, attribute: .Trailing, relatedBy: .Equal, toItem: withView, attribute: .Trailing, multiplier: 1.0, constant: 0.0)
+        
+        return [c1,c2,c3,c4]
+    }
+
+}

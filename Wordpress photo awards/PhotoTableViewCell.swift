@@ -30,28 +30,36 @@ class PhotoTableViewCell: UITableViewCell {
     func set(item:Item, refreshCell:()->()){
     
         self.blogLabel.text = item.name
+        self.postImageView.loadItem(item, completed: refreshCell)
+    }
+}
+
+
+extension UIImageView{
+    
+    func loadItem(item:Item,completed:()->()){
+    
         let delegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let imageCache = delegate.imageCache
 
         if let cachedImg = imageCache.imageWithIdentifier("\(item.name.hash)")
         {
-          //print("Cached= \(item.name.hash)")
-            self.postImageView.image = cachedImg
+            //print("Cached= \(item.name.hash)")
+            self.image = cachedImg
         }
         else if let url = item.url
         {
-            self.postImageView.af_setImageWithURL(url, placeholderImage: UIImage(named:"LoadingImage"), completion: { (response) in
+            self.af_setImageWithURL(url, placeholderImage: UIImage(named:"LoadingImage"), completion: { (response) in
                 
                 switch(response.result)
                 {
-                 case .Success(let img):
+                case .Success(let img):
                     imageCache.addImage(img, withIdentifier: "\(item.name.hash)")
-                    refreshCell()
-                 case .Failure(_):
+                    completed()
+                case .Failure(_):
                     break
                 }
             })
-            
         }
     }
 }

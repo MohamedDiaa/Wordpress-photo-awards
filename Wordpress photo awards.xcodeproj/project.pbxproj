@@ -20,6 +20,8 @@
 		1267FB1B1D70B72500DA9BD8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1267FB191D70B72500DA9BD8 /* MainViewController.xib */; };
 		5681AF961FFBA121967F82BB /* Pods_Wordpress_photo_awardsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951833E83F71E5977CF559A /* Pods_Wordpress_photo_awardsUITests.framework */; };
 		76D4811C7AAC26CE9E58FC71 /* Pods_Wordpress_photo_awards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */; };
+		D90F49271D78D677004ADFEC /* DetailPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F49251D78D677004ADFEC /* DetailPhotoViewController.swift */; };
+		D90F49281D78D677004ADFEC /* DetailPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90F49261D78D677004ADFEC /* DetailPhotoViewController.xib */; };
 		D9E735D31D78A9720018C1A9 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E735D11D78A9720018C1A9 /* PhotoTableViewCell.swift */; };
 		D9E735D41D78A9720018C1A9 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E735D21D78A9720018C1A9 /* PhotoTableViewCell.xib */; };
 		D9E735D61D78A9B20018C1A9 /* PhotoTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9E735D51D78A9B20018C1A9 /* PhotoTableViewHeader.xib */; };
@@ -68,6 +70,8 @@
 		9DAF697B3885E57F5D6E979F /* Pods-Wordpress photo awardsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsTests/Pods-Wordpress photo awardsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B535DA1298BE77779BF4A200 /* Pods-Wordpress photo awardsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wordpress photo awardsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wordpress photo awardsUITests/Pods-Wordpress photo awardsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD332EA2C9593859FD1C78A0 /* Pods_Wordpress_photo_awards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wordpress_photo_awards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90F49251D78D677004ADFEC /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
+		D90F49261D78D677004ADFEC /* DetailPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailPhotoViewController.xib; sourceTree = "<group>"; };
 		D9E735D11D78A9720018C1A9 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		D9E735D21D78A9720018C1A9 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
 		D9E735D51D78A9B20018C1A9 /* PhotoTableViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewHeader.xib; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 				D9E735D11D78A9720018C1A9 /* PhotoTableViewCell.swift */,
 				D9E735D21D78A9720018C1A9 /* PhotoTableViewCell.xib */,
 				D9E735D51D78A9B20018C1A9 /* PhotoTableViewHeader.xib */,
+				D90F49251D78D677004ADFEC /* DetailPhotoViewController.swift */,
+				D90F49261D78D677004ADFEC /* DetailPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			files = (
 				1267FAED1D70AE6A00DA9BD8 /* LaunchScreen.storyboard in Resources */,
 				D9E735D61D78A9B20018C1A9 /* PhotoTableViewHeader.xib in Resources */,
+				D90F49281D78D677004ADFEC /* DetailPhotoViewController.xib in Resources */,
 				1267FAEA1D70AE6A00DA9BD8 /* Assets.xcassets in Resources */,
 				D9E735D41D78A9720018C1A9 /* PhotoTableViewCell.xib in Resources */,
 				1267FAE81D70AE6A00DA9BD8 /* Main.storyboard in Resources */,
@@ -486,6 +493,7 @@
 				1267FB131D70B0DC00DA9BD8 /* Item.swift in Sources */,
 				1267FB111D70B04B00DA9BD8 /* Model.swift in Sources */,
 				D9E735D31D78A9720018C1A9 /* PhotoTableViewCell.swift in Sources */,
+				D90F49271D78D677004ADFEC /* DetailPhotoViewController.swift in Sources */,
 				1267FAE51D70AE6A00DA9BD8 /* ViewController.swift in Sources */,
 				1267FAE31D70AE6A00DA9BD8 /* AppDelegate.swift in Sources */,
 				1267FB1A1D70B72500DA9BD8 /* MainViewController.swift in Sources */,

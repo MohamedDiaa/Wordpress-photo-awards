@@ -88,4 +88,14 @@ class MainViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if let items = self.items where items.count > indexPath.section
+        {
+            let detailVC = DetailPhotoViewController(nibName: "DetailPhotoViewController", bundle: nil, item: items[indexPath.section])
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    
+    }
 }
