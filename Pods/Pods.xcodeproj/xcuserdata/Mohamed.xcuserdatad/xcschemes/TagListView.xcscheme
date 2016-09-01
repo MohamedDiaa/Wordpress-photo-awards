@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '11F54C4FC91D49DA86D50009'
-               BlueprintName = 'Pods-Wordpress photo awards'
+               BlueprintIdentifier = 'F7657AD2B00E957956975D35'
+               BlueprintName = 'TagListView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_Wordpress_photo_awards.framework'>
+               BuildableName = 'TagListView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

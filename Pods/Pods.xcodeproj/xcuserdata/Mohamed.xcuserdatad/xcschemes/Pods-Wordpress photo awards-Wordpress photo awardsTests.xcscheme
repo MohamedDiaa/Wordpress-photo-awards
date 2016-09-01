@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AF7B87477C28A517CF309483'
+               BlueprintIdentifier = '0DFE67785B825223ACA3D601'
                BlueprintName = 'Pods-Wordpress photo awards-Wordpress photo awardsTests'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Wordpress_photo_awards_Wordpress_photo_awardsTests.framework'>

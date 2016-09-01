@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/Alamofire.framework"
   install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/AlamofireImage.framework"
+  install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/TagListView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/Alamofire.framework"
   install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/AlamofireImage.framework"
+  install_framework "Pods-Wordpress photo awards-Wordpress photo awardsUITests/TagListView.framework"
 fi
